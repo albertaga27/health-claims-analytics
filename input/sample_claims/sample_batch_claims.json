@@ -1,0 +1,52 @@
+[
+  {
+    "text_content": "Patient John Smith, 52 years old, presents with Type 2 diabetes mellitus diagnosed 3 years ago. Currently managed with Metformin 1000mg twice daily and lifestyle modifications. Recent HbA1c level 7.8%. Patient reports good adherence to medication regimen. No diabetic complications noted. Requesting coverage for continuous glucose monitoring system.",
+    "claimant_info": {
+      "name": "John Smith",
+      "age": 52,
+      "policy_number": "POL-2024-101",
+      "claim_type": "durable_medical_equipment",
+      "claim_amount": 2500.00
+    }
+  },
+  {
+    "text_content": "Emergency department visit for 34-year-old female with acute appendicitis. Patient presented with severe right lower quadrant pain, nausea, and fever. CT scan confirmed acute appendicitis. Emergency laparoscopic appendectomy performed successfully. Post-operative recovery uneventful. Discharged home after 2 days.",
+    "claimant_info": {
+      "name": "Sarah Johnson",
+      "age": 34,
+      "policy_number": "POL-2024-102",
+      "claim_type": "emergency_surgery",
+      "claim_amount": 18500.00
+    }
+  },
+  {
+    "text_content": "Routine annual physical examination for 28-year-old healthy male. No acute complaints. Vital signs normal. Laboratory results within normal limits. Immunizations up to date. Patient counseled on preventive care and healthy lifestyle. No significant medical issues identified.",
+    "claimant_info": {
+      "name": "Mike Davis",
+      "age": 28,
+      "policy_number": "POL-2024-103",
+      "claim_type": "preventive_care",
+      "claim_amount": 350.00
+    }
+  },
+  {
+    "text_content": "67-year-old female with newly diagnosed breast cancer. Pathology shows invasive ductal carcinoma, stage IIA. Patient scheduled for neoadjuvant chemotherapy followed by surgery. Oncology consultation completed. Patient and family counseled regarding treatment plan and prognosis. Requesting pre-authorization for chemotherapy regimen.",
+    "claimant_info": {
+      "name": "Mary Wilson",
+      "age": 67,
+      "policy_number": "POL-2024-104",
+      "claim_type": "cancer_treatment",
+      "claim_amount": 85000.00
+    }
+  },
+  {
+    "text_content": "Follow-up visit for 59-year-old male with coronary artery disease. Patient underwent cardiac catheterization 6 months ago with stent placement. Currently on dual antiplatelet therapy. No chest pain or shortness of breath. Exercise tolerance improved. Lipid panel shows good control. Continue current medications.",
+    "claimant_info": {
+      "name": "Robert Brown",
+      "age": 59,
+      "policy_number": "POL-2024-105",
+      "claim_type": "cardiac_follow_up",
+      "claim_amount": 750.00
+    }
+  }
+]

@@ -1,0 +1,56 @@
+Patient: Michael Chen, Age 52, DOB: 03/22/1973
+
+Chief Complaint: Routine physical examination and preventive care
+
+Medical History:
+- Hypertension diagnosed 2018, well-controlled
+- Hypercholesterolemia managed with statin therapy
+- Type 2 diabetes mellitus, excellent glycemic control
+- No significant surgical history
+
+Current Medications:
+- Lisinopril 10mg once daily for blood pressure control
+- Atorvastatin 20mg once daily for cholesterol management
+- Metformin 1000mg twice daily for diabetes management
+- Aspirin 81mg once daily for cardiovascular protection
+- Multivitamin once daily
+
+Vital Signs:
+- Blood pressure: 125/78 mmHg
+- Heart rate: 72 bpm, regular rhythm
+- Temperature: 98.6°F (37°C)
+- Weight: 180 lbs, BMI: 24.5 (normal range)
+- Oxygen saturation: 99% on room air
+
+Physical Examination:
+- General appearance: Well-appearing, no acute distress
+- Cardiovascular: Regular rate and rhythm, no murmurs
+- Pulmonary: Clear to auscultation bilaterally
+- Abdomen: Soft, non-tender, no organomegaly
+- Extremities: No edema, peripheral pulses intact
+- Neurological: Alert and oriented, no focal deficits
+
+Laboratory Results:
+- Hemoglobin A1c: 6.8% (target <7%)
+- Fasting glucose: 118 mg/dL
+- Total cholesterol: 165 mg/dL
+- LDL cholesterol: 95 mg/dL
+- HDL cholesterol: 48 mg/dL
+- Triglycerides: 110 mg/dL
+- Creatinine: 0.9 mg/dL (normal kidney function)
+
+Preventive Care:
+- Colonoscopy: Due (last performed 2015)
+- Mammogram: N/A (male patient)
+- Prostate screening: PSA 1.2 ng/mL (normal)
+- Vaccinations: Up to date including COVID-19, influenza
+
+Assessment and Plan:
+- Continue current medication regimen
+- Maintain healthy diet and regular exercise
+- Schedule colonoscopy screening
+- Return for follow-up in 6 months
+- Continue annual physical examinations
+
+Risk Assessment: Low risk patient with well-controlled chronic conditions
+Insurance Coverage: Routine preventive care covered under health maintenance plan

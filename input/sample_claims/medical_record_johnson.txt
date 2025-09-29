@@ -1,0 +1,46 @@
+Patient: Sarah Johnson, Age 38, DOB: 05/15/1987
+
+Medical History:
+- Chronic obstructive pulmonary disease (COPD) diagnosed 2022
+- Asthma since childhood, well-controlled with inhaler therapy
+- Gastroesophageal reflux disease (GERD) managed with proton pump inhibitors
+- History of anxiety disorder, currently stable
+
+Current Medications:
+- Albuterol sulfate 90 mcg/actuation inhaler, 2 puffs every 4-6 hours as needed
+- Fluticasone propionate 44 mcg/actuation, 2 puffs twice daily
+- Omeprazole 20mg once daily before breakfast
+- Sertraline 50mg once daily for anxiety management
+- Vitamin D3 2000 IU daily
+
+Recent Hospitalization (September 2025):
+Chief Complaint: Acute exacerbation of COPD with increased dyspnea
+Duration: 3-day hospital stay
+Treatment: IV corticosteroids, nebulizer treatments, oxygen therapy
+Discharge: Stable condition with home oxygen therapy prescribed
+
+Current Symptoms:
+- Persistent cough with clear sputum production
+- Mild dyspnea on exertion, improved from admission
+- Fatigue and decreased exercise tolerance
+- Occasional chest tightness, relieved with bronchodilator use
+
+Diagnostic Results:
+- Chest X-ray: Hyperinflated lungs consistent with COPD, no acute infiltrates
+- Arterial blood gas: pH 7.38, PaCO2 45 mmHg, PaO2 68 mmHg on room air
+- Spirometry: FEV1 55% predicted, FVC 75% predicted, FEV1/FVC ratio 0.73
+
+Plan:
+- Continue current bronchodilator therapy
+- Pulmonary rehabilitation referral
+- Home oxygen therapy 2L/min as needed for oxygen saturation <90%
+- Follow-up with pulmonologist in 2 weeks
+- Annual influenza vaccination recommended
+
+Risk Factors:
+- Former smoker (quit 3 years ago, 15 pack-year history)
+- Family history of respiratory disease
+- Occupational exposure to dust and chemicals (construction work)
+- Sedentary lifestyle due to respiratory limitations
+
+Prognosis: Moderate COPD with potential for disease progression. Patient education on inhaler technique and smoking cessation reinforcement completed.

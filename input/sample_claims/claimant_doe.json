@@ -1,0 +1,24 @@
+{
+  "name": "John Doe",
+  "age": 45,
+  "gender": "Male",
+  "policy_number": "POL-2024-001",
+  "effective_date": "2024-01-01",
+  "claim_type": "medical_expenses",
+  "claim_amount": 15000.00,
+  "contact_info": {
+    "phone": "555-0123",
+    "email": "john.doe@email.com",
+    "address": {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  "medical_history": {
+    "chronic_conditions": ["Type 2 Diabetes", "Hypertension"],
+    "allergies": ["Penicillin"],
+    "previous_surgeries": []
+  }
+}

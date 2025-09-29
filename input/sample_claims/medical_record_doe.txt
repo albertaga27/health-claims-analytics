@@ -1,0 +1,94 @@
+MEDICAL RECORD
+Patient Information:
+Name: John Doe
+Date of Birth: 01/15/1979
+Age: 45
+Gender: Male
+Policy Number: POL-2024-001
+
+CHIEF COMPLAINT:
+Patient presents with chest pain and shortness of breath during physical activity.
+
+HISTORY OF PRESENT ILLNESS:
+Mr. Doe is a 45-year-old male with a history of Type 2 diabetes mellitus and hypertension who presents with a 3-week history of chest discomfort during exertion. The pain is described as a pressure-like sensation in the center of his chest, lasting 2-3 minutes and resolving with rest. He also reports associated shortness of breath and mild fatigue.
+
+PAST MEDICAL HISTORY:
+- Type 2 Diabetes Mellitus (diagnosed 2020)
+- Essential Hypertension (diagnosed 2018)
+- Hyperlipidemia
+- No history of myocardial infarction or stroke
+
+CURRENT MEDICATIONS:
+- Metformin 1000mg twice daily
+- Lisinopril 10mg once daily
+- Atorvastatin 20mg once daily
+- Aspirin 81mg once daily
+
+ALLERGIES:
+- Penicillin (rash)
+
+SOCIAL HISTORY:
+- Former smoker (quit 5 years ago, 10 pack-year history)
+- Occasional alcohol use
+- Sedentary lifestyle
+
+FAMILY HISTORY:
+- Father: Myocardial infarction at age 58
+- Mother: Type 2 diabetes
+- Brother: Hypertension
+
+PHYSICAL EXAMINATION:
+Vital Signs:
+- Blood pressure: 142/88 mmHg
+- Heart rate: 78 bpm
+- Temperature: 98.6°F
+- Respiratory rate: 16/min
+- Oxygen saturation: 98% on room air
+
+General: Alert, oriented, in no acute distress
+Cardiovascular: Regular rate and rhythm, no murmurs, rubs, or gallops
+Pulmonary: Clear to auscultation bilaterally
+Extremities: No pedal edema
+
+DIAGNOSTIC TESTS:
+- ECG: Normal sinus rhythm, no acute ST changes
+- Chest X-ray: Normal heart size, clear lung fields
+- Basic metabolic panel: Normal
+- Lipid panel: Total cholesterol 180 mg/dL, LDL 105 mg/dL, HDL 42 mg/dL
+- HbA1c: 7.8% (target <7%)
+
+ASSESSMENT AND PLAN:
+1. Chest pain with exertion - rule out coronary artery disease
+   - Recommend cardiac stress test
+   - Consider cardiology consultation
+   - Continue aspirin therapy
+
+2. Type 2 diabetes mellitus - suboptimal control
+   - Continue Metformin
+   - Consider intensifying therapy
+   - Diabetes education and lifestyle counseling
+
+3. Hypertension - not at goal
+   - Increase Lisinopril to 20mg daily
+   - Monitor blood pressure at home
+   - Lifestyle modifications
+
+4. Hyperlipidemia
+   - Continue Atorvastatin
+   - Repeat lipid panel in 3 months
+
+FOLLOW-UP:
+- Return to clinic in 2 weeks for blood pressure recheck
+- Cardiac stress test scheduled for next week
+- Diabetes educator appointment scheduled
+
+PROVIDER:
+Dr. Sarah Smith, MD
+Internal Medicine
+Date: January 20, 2024
+
+DIAGNOSTIC CODES:
+- Z51.11 - Encounter for antineoplastic chemotherapy
+- I25.10 - Atherosclerotic heart disease of native coronary artery without angina pectoris
+- E11.9 - Type 2 diabetes mellitus without complications
+- I10 - Essential hypertension

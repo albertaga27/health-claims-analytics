@@ -1,0 +1,24 @@
+{
+  "name": "Alberto Gallo",
+  "age": 40,
+  "gender": "Male",
+  "policy_number": "POL-2024-201",
+  "effective_date": "2024-01-01",
+  "claim_type": "medical_expenses",
+  "claim_amount": 500.00,
+  "contact_info": {
+    "phone": "555-0123",
+    "email": "aga@email.com",
+    "address": {
+      "street": "The Circle 02",
+      "city": "Zurich",
+      "state": "Zurich",
+      "zip": "8002"
+    }
+  },
+  "medical_history": {
+    "chronic_conditions": [],
+    "allergies": ["Pollens"],
+    "previous_surgeries": ["Collar bone fracture","LASIK eye surgery"]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "claimant_info": {
+    "name": "Michael Chen", 
+    "age": 52,
+    "policy_number": "POL-2024-003",
+    "claim_type": "preventive_care",
+    "claim_amount": 450.00,
+    "date_of_service": "2025-09-15",
+    "provider_name": "Family Health Associates",
+    "diagnosis_codes": ["Z00.00", "E11.9", "I10"],
+    "procedure_codes": ["99396", "85025", "80053"]
+  }
+}

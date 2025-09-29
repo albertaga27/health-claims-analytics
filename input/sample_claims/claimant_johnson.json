@@ -1,0 +1,13 @@
+{
+  "claimant_info": {
+    "name": "Sarah Johnson", 
+    "age": 38,
+    "policy_number": "POL-2024-002",
+    "claim_type": "respiratory_hospitalization",
+    "claim_amount": 8500.00,
+    "date_of_service": "2025-09-20",
+    "provider_name": "Metro General Hospital",
+    "diagnosis_codes": ["J44.1", "J45.9", "K21.9"],
+    "procedure_codes": ["94640", "94060", "31500"]
+  }
+}
