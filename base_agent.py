@@ -3,6 +3,7 @@ Base agent class for Claims Health Analytics system.
 """
 import asyncio
 import logging
+import os
 from abc import ABC, abstractmethod
 from typing import Any, Dict, List, Optional
 from azure.identity import DefaultAzureCredential
@@ -77,11 +78,44 @@ class AgentOrchestrator:
         self.agent_config = agent_config
         self.logger = setup_logging()
         self.agents = {}
+        self.health_agent_type = self._determine_health_agent_type()
+    
+    def _determine_health_agent_type(self) -> str:
+        """Determine which health analytics agent to use based on environment variable."""
+        use_openai_health_agent = os.getenv("USE_OPENAI_HEALTH_AGENT", "false").lower() == "true"
+        agent_type = "OpenAI Health Analytics" if use_openai_health_agent else "Azure Text Analytics Health"
+        self.logger.info(f"Health analytics agent type determined: {agent_type}")
+        return agent_type
     
     def register_agent(self, name: str, agent: BaseAgent):
         """Register an agent with the orchestrator."""
         self.agents[name] = agent
-        self.logger.info(f"Registered agent: {name}")
+        agent_class_name = agent.__class__.__name__
+        self.logger.info(f"Registered agent: {name} ({agent_class_name})")
+    
+    def setup_health_analytics_agent(self):
+        """Setup the appropriate health analytics agent based on environment configuration."""
+        try:
+            use_openai_health_agent = os.getenv("USE_OPENAI_HEALTH_AGENT", "false").lower() == "true"
+            
+            if use_openai_health_agent:
+                from openai_health_analytics_agent import OpenAIHealthAnalyticsAgent
+                health_agent = OpenAIHealthAnalyticsAgent(self.azure_config, self.agent_config)
+                self.logger.info("Initialized OpenAI Health Analytics Agent")
+            else:
+                from health_analytics_agent import HealthAnalyticsAgent
+                health_agent = HealthAnalyticsAgent(self.azure_config, self.agent_config)
+                self.logger.info("Initialized Azure Text Analytics Health Agent")
+            
+            self.register_agent("health_analytics", health_agent)
+            return health_agent
+            
+        except ImportError as e:
+            self.logger.error(f"Failed to import health analytics agent: {e}")
+            raise
+        except Exception as e:
+            self.logger.error(f"Failed to setup health analytics agent: {e}")
+            raise
     
     async def process_claim(self, claim: ClaimSubmission) -> ClaimSubmission:
         """Process a claim through all registered agents."""
@@ -163,4 +197,12 @@ class AgentOrchestrator:
     
     def get_agent_status(self) -> Dict[str, str]:
         """Get status of all registered agents."""
-        return {name: "active" for name in self.agents.keys()}
+        status = {name: "active" for name in self.agents.keys()}
+        
+        # Add health agent type information
+        if "health_analytics" in self.agents:
+            agent_class = self.agents["health_analytics"].__class__.__name__
+            status["health_analytics_type"] = agent_class
+            status["health_analytics_description"] = self.health_agent_type
+        
+        return status

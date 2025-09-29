@@ -13,7 +13,6 @@ import argparse
 from config import get_azure_config, get_agent_config
 from base_agent import AgentOrchestrator
 from document_extraction_agent import DocumentExtractionAgent
-from health_analytics_agent import HealthAnalyticsAgent
 from underwriting_agent import UnderwritingReasoningAgent
 from models import ClaimSubmission, DocumentMetadata, ClaimStatus
 from utils import (
@@ -35,14 +34,15 @@ class ClaimsHealthAnalyticsApp:
     def _setup_agents(self):
         """Initialize and register all agents."""
         try:
-            # Initialize agents
+            # Initialize document extraction agent
             document_agent = DocumentExtractionAgent(self.azure_config, self.agent_config)
-            health_agent = HealthAnalyticsAgent(self.azure_config, self.agent_config)
-            underwriting_agent = UnderwritingReasoningAgent(self.azure_config, self.agent_config)
-            
-            # Register agents with orchestrator
             self.orchestrator.register_agent("document_extraction", document_agent)
-            self.orchestrator.register_agent("health_analytics", health_agent)
+            
+            # Setup health analytics agent based on environment variable
+            self.orchestrator.setup_health_analytics_agent()
+            
+            # Initialize underwriting agent
+            underwriting_agent = UnderwritingReasoningAgent(self.azure_config, self.agent_config)
             self.orchestrator.register_agent("underwriting", underwriting_agent)
             
             self.logger.info("All agents initialized successfully")
@@ -245,12 +245,16 @@ class ClaimsHealthAnalyticsApp:
     
     def get_system_status(self) -> Dict[str, any]:
         """Get system status and agent health."""
+        agent_status = self.orchestrator.get_agent_status()
+        
         return {
             "status": "operational",
-            "agents": self.orchestrator.get_agent_status(),
+            "agents": agent_status,
             "configuration": {
                 "document_extraction_model": self.agent_config.document_extraction_model,
                 "health_analytics_model": self.agent_config.health_analytics_model,
+                "health_analytics_agent_type": agent_status.get("health_analytics_description", "Unknown"),
+                "health_analytics_class": agent_status.get("health_analytics_type", "Unknown"),
                 "reasoning_model": self.agent_config.reasoning_model,
                 "confidence_threshold": self.agent_config.confidence_threshold
             },
@@ -267,8 +271,14 @@ async def main():
     parser.add_argument("--claimant", help="Claimant info JSON file")
     parser.add_argument("--output", help="Output report path")
     parser.add_argument("--batch", help="Batch processing JSON file")
+    parser.add_argument("--use-openai-health", action="store_true",
+                       help="Use OpenAI Health Analytics Agent instead of Azure Text Analytics")
     
     args = parser.parse_args()
+    
+    # Set environment variable based on command line argument
+    if args.use_openai_health:
+        os.environ["USE_OPENAI_HEALTH_AGENT"] = "true"
     
     # Initialize application
     app = ClaimsHealthAnalyticsApp()
@@ -331,6 +341,11 @@ async def main():
 async def run_demo(app: ClaimsHealthAnalyticsApp):
     """Run a demonstration of the claims processing system."""
     print("=== Claims Health Analytics Demo ===")
+    
+    # Show which health analytics agent is being used
+    use_openai_health_agent = os.getenv("USE_OPENAI_HEALTH_AGENT", "false").lower() == "true"
+    agent_type = "OpenAI Health Analytics Agent" if use_openai_health_agent else "Azure Text Analytics Health Agent"
+    print(f"Using: {agent_type}")
     print()
     
     # Sample claimant information
